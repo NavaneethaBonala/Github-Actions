@@ -18,6 +18,7 @@ jobs:
           role-to-assume: "arn:aws:iam::977727482222:role/S3-OIDC-gitactions"
           role-session-name: "github-actions"
           aws-region: ap-south-1
+          audience: sts.amazonaws.com
 
       - name: Static code to s3 bucket
         run: |
