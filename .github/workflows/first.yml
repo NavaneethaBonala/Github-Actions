@@ -7,6 +7,17 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Run index.html
-        run : cat index.html
+      - name: OIDC AWS configure
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: "arn:aws:iam::977727482222:role/S3-OIDC-gitactions"
+          aws-region: us-east-1
+
+      - name: Static code to s3 bucket
+        run: |
+          aws s3 sync ./ s3://navaneetha-s3-bucket/ \
+          --exclude "*" \
+          --include "*.html"
+
+      
    
