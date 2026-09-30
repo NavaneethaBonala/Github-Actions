@@ -3,9 +3,9 @@ on : push
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-     -name: checkout code
-      uses: actions/checkout@v4
+  steps:
+    -name: Checkout code
+    uses: actions/checkout@v4
 
-     -name: run index.html
-      run: cat index.html
+    -name: Run index.html
+    run: cat index.html
