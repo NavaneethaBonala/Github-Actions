@@ -18,4 +18,5 @@ jobs:
       - name: OIDC AWS configure
         uses: aws-actions/configure-aws-credentials@v4
         with:
+          role-to-assume: arn:aws:iam::977727482222:role/webIdentity
           aws-region: ap-south-1
