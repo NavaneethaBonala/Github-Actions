@@ -20,3 +20,4 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::977727482222:role/webIdentity
           aws-region: ap-south-1
+          audience: sts.amazonaws.com
