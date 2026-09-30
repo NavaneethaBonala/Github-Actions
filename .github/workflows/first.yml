@@ -4,8 +4,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
   steps:
-    -name: Checkout code
-    uses: actions/checkout@v4
+    - name: Checkout Code
+      uses: actions/checkout@v4
 
-    -name: Run index.html
-    run: cat index.html
+    - name: Run index.html
+      uses: cat index.html
+   
