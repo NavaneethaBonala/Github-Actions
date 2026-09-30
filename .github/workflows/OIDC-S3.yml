@@ -17,17 +17,8 @@ jobs:
 
       - name: OIDC AWS configure
         uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: "arn:aws:iam::977727482222:role/webIdentity"
-          role-session-name: "github-actions"
-          aws-region: ap-south-1
-          audience: sts.amazonaws.com
-
-      - name: Static code to s3 bucket
-        run: |
-          aws s3 sync ./ s3://navaneetha-s3-bucket/ \
-          --exclude "*" \
-          --include "*.html"
+       
+      
 
       
    
