@@ -1,4 +1,4 @@
-name: first Job
+name: AWS-OIDC-Configure-StaticWeb-S3Bucket
 on : push
 
 permissions:

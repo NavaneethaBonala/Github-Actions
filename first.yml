@@ -1,0 +1,18 @@
+name: first Job
+on : push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Read index.html file
+        run: cat index.html
+
+
+     
+
+      
+   
