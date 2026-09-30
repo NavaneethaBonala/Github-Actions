@@ -8,5 +8,5 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Run index.html
-      uses: cat index.html
+      run : cat index.html
    
